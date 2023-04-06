@@ -10,6 +10,8 @@ cat <<EOF
 
 			Machine Preparer for hackers - @furk4n0zturk
 
+Machine Preparing...!
+
 EOF
 
 # update & upgrade

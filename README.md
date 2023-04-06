@@ -13,10 +13,10 @@ git clone https://github.com/furk4n0zturk/MachinePreparer.git
 cd MachinePreparer/
 ```
 ```
-chmod +x machinepreparer.sh
+chmod +x machprep.sh
 ```
 ```
-$ ./machinepreparer.sh
+$ ./machprep.sh
 
  __  __    _    ____ _   _ ____  ____  _____ ____
 |  \/  |  / \  / ___| | | |  _ \|  _ \| ____|  _ \
@@ -25,5 +25,7 @@ $ ./machinepreparer.sh
 |_|  |_/_/   \_\____|_| |_|_|   |_| \_\_____|_|
 
                         Machine Preparer for hackers - @furk4n0zturk
+
+Machine Preparing...!
 
 ```
