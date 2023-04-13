@@ -1,6 +1,6 @@
 # MachinePreparer
 
-<p align="center"> <img width="600" src="src/machprep.png" alt="Material Bread logo">
+<p align="center"> <img width="300" src="img/mach.png" alt="Brand logo">
 </p>
 
 Machine Preparer for hackers
