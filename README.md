@@ -1,6 +1,6 @@
 # MachinePreparer
 
-<p align="center"> <img width="300" src="img/mach.png" alt="Brand logo">
+<p align="center"> <img width="300" src="img/logo.png" alt="Brand logo">
 </p>
 
 Machine Preparer for hackers
