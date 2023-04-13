@@ -39,7 +39,7 @@ Machine Preparing...!
 [+] subbrute
 
 EOF
-sleep 5
+sleep 3
 
 # update & upgrade
 apt update -y && apt upgrade -y
