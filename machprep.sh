@@ -18,7 +18,7 @@ EOF
 apt update -y && apt upgrade -y
 
 # tool install
-apt install curl nmap dnsutils net-tools ssh ftp docker.io python3 python python3-pip python-pip unzip libpcap-dev wget gnupg2 git -y
+apt install curl nmap dnsutils net-tools ssh ftp docker.io python3 python python3-pip python-pip unzip libpcap-dev wget gnupg2 git screen john hashcat -y
 
 # Acunetix install
 ## Username: admin@admin.com ##
@@ -127,4 +127,21 @@ bash <(curl -fsSL https://raw.githubusercontent.com/osmedeus/osmedeus-base/maste
 
 cd /root
 go install github.com/hahwul/dalfox/v2@latest
+
+# gobuster install
+
+cd /root
+go install github.com/OJ/gobuster/v3@latest
+
+# dnsrecon install
+
+cd /root
+git clone https://github.com/darkoperator/dnsrecon.git
+cd dnsrecon/
+pip3 install -r requirements.txt
+
+# subbrute install
+
+cd /root
+git clone https://github.com/TheRook/subbrute.git
 
