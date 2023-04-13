@@ -3,7 +3,9 @@
 Machine Preparer for hackers
 
 This bash script makes the hacking working environment of newly installed servers ready without manual effort.
-\nNote: It's recommended to reboot the machine after running the bash.
+
+Note: It's recommended to reboot the machine after running the bash.
+
 # Usage
 
 ```
