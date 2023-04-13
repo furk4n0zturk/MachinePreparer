@@ -123,3 +123,8 @@ findomain --help
 cd /root
 bash <(curl -fsSL https://raw.githubusercontent.com/osmedeus/osmedeus-base/master/install.sh)
 
+# dalfox install
+
+cd /root
+go install github.com/hahwul/dalfox/v2@latest
+
