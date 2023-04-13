@@ -2,7 +2,7 @@
 
 <p align="center"> <img width="150" src="img/logo.png" alt="Brand logo">
 </p>
-<p align="center"> Machine Preparer for hackers</p>
+<p align="center"> ## Machine Preparer for hackers</p>
 
 This bash script makes the hacking working environment of newly installed servers ready without manual effort.
 
