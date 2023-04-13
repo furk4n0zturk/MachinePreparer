@@ -12,7 +12,34 @@ cat <<EOF
 
 Machine Preparing...!
 
+[+] Go
+[+] Python
+[+] Curl
+[+] Git
+[+] Nmap
+[+] dnsutils
+[+] net-tools
+[+] Docker
+[+] wget
+[+] john the ripper
+[+] hashcat
+[+] nuclei
+[+] httpx
+[+] naabu
+[+] subfinder
+[+] amass
+[+] Sublist3r
+[+] Metasploit
+[+] testssl
+[+] findomain
+[+] Osmedeus
+[+] DalFox
+[+] Gobuster
+[+] dnsrecon
+[+] subbrute
+
 EOF
+sleep 5
 
 # update & upgrade
 apt update -y && apt upgrade -y
