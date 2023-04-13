@@ -9,29 +9,53 @@ This bash script makes the hacking working environment of newly installed server
 Note: It's recommended to reboot the machine after running the bash.
 
 [+] Go
+
 [+] Python
+
 [+] Curl
+
 [+] Git
+
 [+] Nmap
+
 [+] dnsutils
+
 [+] net-tools
+
 [+] Docker
+
 [+] wget
+
 [+] john the ripper
+
 [+] hashcat
+
 [+] nuclei
+
 [+] httpx
+
 [+] naabu
+
 [+] subfinder
+
 [+] amass
+
 [+] Sublist3r
+
 [+] Metasploit
+
 [+] testssl
+
 [+] findomain
+
 [+] Osmedeus
+
 [+] DalFox
+
 [+] Gobuster
+
 [+] dnsrecon
+
 [+] subbrute
 
 # Usage
