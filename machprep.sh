@@ -47,13 +47,6 @@ apt update -y && apt upgrade -y
 # tool install
 apt install curl nmap dnsutils net-tools ssh ftp docker.io python3 python python3-pip python-pip unzip libpcap-dev wget gnupg2 git screen john hashcat -y
 
-# Acunetix install
-## Username: admin@admin.com ##
-## password: Admin123 ##
-
-docker pull vouu/acu14
-docker run -it -d --name awvs -p 3443:3443 --restart=always vouu/acu14:latest
-
 # Go install
 
 LATEST_GO_VERSION="$(curl --silent https://go.dev/VERSION?m=text)";
