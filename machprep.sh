@@ -59,12 +59,10 @@ docker run -it -d --name awvs -p 3443:3443 --restart=always vouu/acu14:latest
 LATEST_GO_VERSION="$(curl --silent https://go.dev/VERSION?m=text)";
 
 [ ! -d "/usr/local/go" ]
-cd /tmp
-wget https://go.dev/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz
-tar -C /usr/local/ -xzf ${LATEST_GO_VERSION}.linux-amd64.tar.gz
-rm -rf ${LATEST_GO_VERSION}.linux-amd64.tar.gz
+wget -P /tmp https://go.dev/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz
+tar -C /usr/local/ -xzf /tmp/${LATEST_GO_VERSION}.linux-amd64.tar.gz
+rm -rf /tmp/${LATEST_GO_VERSION}.linux-amd64.tar.gz
 
-cd /usr/local/
 echo "export PATH=\$PATH:/usr/local/go/bin:\$HOME/go/bin" >> ~/.bashrc
 echo "export GOROOT=/usr/local/go" >> ~/.bashrc
 source ~/.bashrc
@@ -72,103 +70,83 @@ go version
 
 # nuclei install
 
-cd /root
-git clone https://github.com/projectdiscovery/nuclei.git; \
-cd nuclei/v2/cmd/nuclei; \
-go build; \
-mv nuclei /usr/local/bin/; \
+git -C /root clone https://github.com/projectdiscovery/nuclei.git; \
+go build -C /root/nuclei/v2/cmd/nuclei; \
+mv /root/nuclei/v2/cmd/nuclei /usr/local/bin/; \
 nuclei -version;
 
 # httpx install
 
-cd /root
-git clone https://github.com/projectdiscovery/httpx.git; \
-cd httpx/cmd/httpx; \
-go build; \
-mv httpx /usr/local/bin/; \
+git -C /root clone https://github.com/projectdiscovery/httpx.git; \
+go build -C /root/httpx/cmd/httpx; \
+mv /root/httpx/cmd/httpx /usr/local/bin/; \
 httpx -version;
 
 # naabu install
 
-cd /root
-git clone https://github.com/projectdiscovery/naabu.git; \
-cd naabu/v2/cmd/naabu; \
-go build; \
-mv naabu /usr/local/bin/; \
+git -C /root clone https://github.com/projectdiscovery/naabu.git; \
+go build -C /root/naabu/v2/cmd/naabu; \
+mv /root/naabu/v2/cmd/naabu /usr/local/bin/; \
 naabu -version;
 
 # subfinder install
 
-cd /root
-git clone https://github.com/projectdiscovery/subfinder.git; \
-cd subfinder/v2/cmd/subfinder; \
-go build; \
-mv subfinder /usr/local/bin/; \
+git -C /root clone https://github.com/projectdiscovery/subfinder.git; \
+go build -C /root/subfinder/v2/cmd/subfinder; \
+mv /root/subfinder/v2/cmd/subfinder /usr/local/bin/; \
 subfinder -version;
 
 # amass install
 
-cd /root
-git clone https://github.com/owasp-amass/amass.git; \
-cd amass/cmd/amass; \
-go build; \
-mv amass /usr/local/bin/; \
+git -C /root clone https://github.com/owasp-amass/amass.git; \
+go build -C /root/amass/cmd/amass; \
+mv /root/amass/cmd/amass /usr/local/bin/; \
 amass -version;
 
 # sublis3r install
 
-cd /root
-git clone https://github.com/aboul3la/Sublist3r.git
-cd Sublist3r/
-pip install -r requirements.txt
+git -C /root clone https://github.com/aboul3la/Sublist3r.git
+pip install -r /root/Sublist3r/requirements.txt
 
 # metasploit install
 
-cd /root
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
-chmod +x msfinstall
-./msfinstall
+curl -s https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > /root/msfinstall
+chmod +x /root/msfinstall
+sh /root/msfinstall
 msfdb init
 msfconsole --version
 
 # testssl install
 
-cd /root
-git clone --depth 1 https://github.com/drwetter/testssl.sh.git
+git -C /root clone --depth 1 https://github.com/drwetter/testssl.sh.git
 
 # findomain install
 
-cd /root
-curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip
-unzip findomain-linux.zip
-chmod +x findomain
-mv findomain /usr/bin/findomain
+curl -sLO -o /root https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip
+unzip /root/findomain-linux.zip
+chmod +x /root/findomain
+mv /root/findomain /usr/bin/findomain
 findomain --help
 
 # osmedeus install
 
-cd /root
-bash <(curl -fsSL https://raw.githubusercontent.com/osmedeus/osmedeus-base/master/install.sh)
+wget -P /root https://raw.githubusercontent.com/osmedeus/osmedeus-base/master/install.sh
+bash /root/install.sh
 
 # dalfox install
 
-cd /root
-go install github.com/hahwul/dalfox/v2@latest
+go install -C /root github.com/hahwul/dalfox/v2@latest
 
 # gobuster install
 
-cd /root
-go install github.com/OJ/gobuster/v3@latest
+go install -C /root github.com/OJ/gobuster/v3@latest
 
 # dnsrecon install
 
-cd /root
-git clone https://github.com/darkoperator/dnsrecon.git
-cd dnsrecon/
-pip3 install -r requirements.txt
+git -C /root clone https://github.com/darkoperator/dnsrecon.git
+pip3 install -r /root/dnsrecon/requirements.txt
 
 # subbrute install
 
-cd /root
-git clone https://github.com/TheRook/subbrute.git
+git -C /root clone https://github.com/TheRook/subbrute.git
 
