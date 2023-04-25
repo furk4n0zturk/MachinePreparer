@@ -57,5 +57,19 @@ Machine Preparing...!
 [+] Gobuster
 [+] dnsrecon
 [+] subbrute
+[+] tlsx
+[+] katana
+[+] dnsx
+[+] gau
+[+] ffuf
+[+] gospider
+[+] jaeles
+[+] metabigor
+[+] goverview
+[+] aquatone
+[+] gowitness
+[+] trufflehog
+[+] gitleaks
+
 
 ```
