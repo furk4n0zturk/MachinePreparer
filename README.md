@@ -65,11 +65,8 @@ Machine Preparing...!
 [+] gospider
 [+] jaeles
 [+] metabigor
-[+] goverview
 [+] aquatone
-[+] gowitness
 [+] trufflehog
 [+] gitleaks
-
 
 ```

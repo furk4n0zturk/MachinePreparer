@@ -11,7 +11,6 @@ cat <<EOF
 			Machine Preparer for hackers - @furk4n0zturk
 
 Machine Preparing...!
-
 [+] Go
 [+] Python
 [+] Curl
@@ -37,6 +36,17 @@ Machine Preparing...!
 [+] Gobuster
 [+] dnsrecon
 [+] subbrute
+[+] tlsx
+[+] katana
+[+] dnsx
+[+] gau
+[+] ffuf
+[+] gospider
+[+] jaeles
+[+] metabigor
+[+] aquatone
+[+] trufflehog
+[+] gitleaks
 
 EOF
 sleep 3
